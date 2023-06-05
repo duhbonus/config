@@ -1,0 +1,7 @@
+.DS_Store
+
+*/.DS_Store
+
+nvim/lua/core/.DS_Store
+
+nvim/plugin/packer_compiled.lua

@@ -1,0 +1,33 @@
+# Make sure to add "source ~/.config/zshrc/.zshrc" to a .zshrc file in ~/"
+precmd() {
+  emulate -L zsh -o extended_glob
+  local branch
+  if (( $+commands[git] )) &&
+     [[ -n $GIT_DIR || -n ./(../)#.git(#qN) ]] &&
+     branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null); then
+    typeset -g psvar=($branch)
+  else
+    typeset -g psvar=()
+  fi
+}
+
+setopt prompt_percent no_prompt_subst
+PS1='%F{#497fd6}%c%(1v. %F{#5db545}(%v).)%f '
+
+bindkey -s "^G" "source ~/.config/nv.sh^M"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+cdd() {
+  pushd ~/*/*/${1}*
+}
+ 
+export cdd
+
+cdc() {
+    cd ~/.config/
+}
+
+export cdc
+
+bindkey -s ^f "tmux neww ~/.config/tmux/tmux-sessionizer\n"
