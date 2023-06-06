@@ -10,4 +10,4 @@ shift + ctrl - b : yabai -m space --mirror x-axis
 shift + ctrl - f : yabai -m space --mirror y-axis
 shift + ctrl - r : yabai -m space --rotate 270
 
-shift + ctrl - m : yabai -m window --toggle zoom-fullscreen
+ctrl - z : yabai -m window --toggle zoom-fullscreen
