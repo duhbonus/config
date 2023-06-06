@@ -1,7 +1,6 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
--- vim.api.nvim_set_option("clipboard","unnamed")
 
 vim.api.nvim_set_keymap("n", "n", "nzz", { silent = true })
 vim.api.nvim_set_keymap("n", "N", "Nzz", { silent = true })
