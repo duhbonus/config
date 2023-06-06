@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
-vim.api.nvim_set_option("clipboard","unnamed")
+-- vim.api.nvim_set_option("clipboard","unnamed")
 
 vim.api.nvim_set_keymap("n", "n", "nzz", { silent = true })
 vim.api.nvim_set_keymap("n", "N", "Nzz", { silent = true })
@@ -24,3 +24,8 @@ vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 vim.keymap.set("n", "<leader>o", "o<ESC>")
 vim.keymap.set("n", "<leader>O", "O<ESC>")
+
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
+vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
