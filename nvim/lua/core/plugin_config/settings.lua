@@ -9,6 +9,7 @@ set.tabstop = 4
 
 set.smartindent = true
 
+set.nu = true
 set.relativenumber = true
 
 set.wrap = false
