@@ -58,6 +58,8 @@ return require('packer').startup(function(use)
 
   use('ThePrimeagen/harpoon')
 
+  use("folke/zen-mode.nvim")
+
   if packer_bootstrap then
     require('packer').sync()
   end
