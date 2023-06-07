@@ -12,43 +12,34 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
-  use('wbthomason/packer.nvim') -- plugin intaller
-  use('nvim-tree/nvim-web-devicons') -- nerd font icons
+  use('wbthomason/packer.nvim')
+  use('nvim-tree/nvim-web-devicons')
   use('nvim-treesitter/nvim-treesitter', {run = 'TSUpdate'})
-  use('lukas-reineke/indent-blankline.nvim') -- does those block lines
-  use('tpope/vim-fugitive') -- git commands (just use :G) inside neovim
+  use('lukas-reineke/indent-blankline.nvim')
+  use('tpope/vim-fugitive')
   use('lewis6991/gitsigns.nvim')
 
-  -- undo tree
   use('mbbill/undotree')
 
-  -- coloschemes
   use('aktersnurra/no-clown-fiesta.nvim')
 
-  -- completion
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
-		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
 		  {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
-
-		  -- Autocompletion
 		  {'hrsh7th/nvim-cmp'},
 		  {'hrsh7th/cmp-buffer'},
 		  {'hrsh7th/cmp-path'},
 		  {'saadparwaiz1/cmp_luasnip'},
 		  {'hrsh7th/cmp-nvim-lsp'},
 		  {'hrsh7th/cmp-nvim-lua'},
-
-		  -- Snippets
 		  {'L3MON4D3/LuaSnip'},
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
 
-  -- commenting 
   use {
     'numToStr/Comment.nvim',
     config = function()
@@ -56,7 +47,6 @@ return require('packer').startup(function(use)
     end
   }
 
-  -- telescope
   use {
     'nvim-telescope/telescope.nvim',
     requires = {
@@ -66,7 +56,6 @@ return require('packer').startup(function(use)
       }
   }
 
-  -- harpoon
   use('ThePrimeagen/harpoon')
 
   if packer_bootstrap then
