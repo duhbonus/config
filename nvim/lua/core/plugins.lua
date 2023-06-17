@@ -21,9 +21,8 @@ return require('packer').startup(function(use)
 
   use('mbbill/undotree')
 
-  use('aktersnurra/no-clown-fiesta.nvim')
-  use('Everblush/nvim')
   use({ 'rose-pine/neovim', as = 'rose-pine' })
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
