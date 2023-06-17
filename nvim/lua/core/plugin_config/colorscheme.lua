@@ -1,2 +1,2 @@
-vim.o.termguicolors = false
-vim.cmd('colorscheme no-clown-fiesta')
+vim.o.termguicolors = true
+vim.cmd('colorscheme rose-pine')
