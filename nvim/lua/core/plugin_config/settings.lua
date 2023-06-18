@@ -23,7 +23,7 @@ set.updatetime = 50
 
 set.colorcolumn = "80"
 
-vim.cmd("highlight ColorColumn guibg=#000000")
+vim.cmd("highlight ColorColumn guibg=#464646")
 
 set.swapfile = false
 set.backup = false
