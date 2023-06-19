@@ -8,6 +8,8 @@ ctrl - l : yabai -m window --focus east
 
 ctrl - b : yabai -m space --mirror x-axis
 ctrl - f : yabai -m space --mirror y-axis
+
 ctrl - r : yabai -m space --rotate 270
+shift + ctrl - r : yabai -m space --rotate 90
 
 ctrl - z : yabai -m window --toggle zoom-fullscreen
