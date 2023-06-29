@@ -21,6 +21,8 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
 
   use({'duhbonus/rose-pine', as = 'rose-pine'})
+  use('folke/tokyonight.nvim')
+  use('dracula/vim')
 
   use('norcalli/nvim-colorizer.lua')
 
