@@ -1,35 +1,33 @@
-local set = vim.opt
+vim.opt.guicursor = ""
 
-set.guicursor = ""
+vim.opt.expandtab = true
+vim.opt.smarttab = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 
-set.expandtab = true
-set.smarttab = true
-set.shiftwidth = 4
-set.tabstop = 4
+vim.opt.smartindent = true
 
-set.smartindent = true
+vim.opt.nu = true
+vim.opt.relativenumber = true
 
-set.nu = true
-set.relativenumber = true
+vim.opt.wrap = false
 
-set.wrap = false
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
 
-set.hlsearch = false
-set.incsearch = true
+vim.opt.scrolloff = 8
 
-set.scrolloff = 8
+vim.opt.updatetime = 50
 
-set.updatetime = 50
-
-set.colorcolumn = "80"
+vim.opt.colorcolumn = "80"
 
 vim.cmd("highlight ColorColumn guibg=#464646")
 
-set.swapfile = false
-set.backup = false
--- make sure to set permissions to read and write on dir
-set.undodir = os.getenv("HOME") .. "/.nvim/undodir"
-set.undofile = true
+vim.opt.swapfile = false
+vim.opt.backup = false
+-- make sure to vim.opt permissions to read and write on dir
+vim.opt.undodir = os.getenv("HOME") .. "/.nvim/undodir"
+vim.opt.undofile = true
 
 
 vim.opt.backspace = "2"
@@ -37,3 +35,5 @@ vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autowrite = true
 vim.opt.autoread = true
+
+vim.opt.mouse = ""
