@@ -5,3 +5,4 @@
 * git (https://git-scm.com)
 * yabai (https://github.com/koekeishiya/yabai)
 * skhd (https://github.com/koekeishiya/skhd)
+* delta (https://dandavison.github.io/delta/installation.html)
