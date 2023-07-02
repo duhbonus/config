@@ -12,7 +12,7 @@ precmd() {
 }
 
 setopt prompt_percent no_prompt_subst
-PS1='%F{#82c6fe}%c%(1v. %F{#9ece6a}(%v).)%f '
+PS1='%F{#7aa2f7}%c%(1v. %F{#9ece6a}(%v).)%f '
 
 bindkey -s "^G" "source ~/.config/nv.sh^M"
 
