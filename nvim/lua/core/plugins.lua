@@ -23,6 +23,8 @@ return require('packer').startup(function(use)
 
   use('norcalli/nvim-colorizer.lua')
 
+  use ('windwp/nvim-autopairs')
+
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  requires = {
