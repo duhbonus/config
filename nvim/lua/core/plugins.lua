@@ -20,6 +20,7 @@ return require('packer').startup(function(use)
   use('mbbill/undotree')
 
   use('folke/tokyonight.nvim')
+  use('rebelot/kanagawa.nvim')
 
   use('norcalli/nvim-colorizer.lua')
 
