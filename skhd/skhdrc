@@ -1,12 +1,19 @@
-ctrl - j : yabai -m window --focus south
-ctrl - k : yabai -m window --focus north
-ctrl - h : yabai -m window --focus west
-ctrl - l : yabai -m window --focus east
+:: default : yabai -m config window_border off
+:: switcher : yabai -m config window_border off
 
-ctrl - b : yabai -m space --mirror x-axis
-ctrl - f : yabai -m space --mirror y-axis
+ctrl - a ; switcher
+switcher < return ; default
+switcher < escape ; default
+
+switcher < j : yabai -m window --focus south
+switcher < k : yabai -m window --focus north
+switcher < h : yabai -m window --focus west
+switcher < l : yabai -m window --focus east
+
+switcher < x : yabai -m space --mirror x-axis
+switcher < y : yabai -m space --mirror y-axis
 
 ctrl - r : yabai -m space --rotate 270
-shift + ctrl - r : yabai -m space --rotate 90
+switcher < r : yabai -m space --rotate 90
 
-ctrl - z : yabai -m window --toggle zoom-fullscreen
+switcher < z : yabai -m window --toggle zoom-fullscreen
