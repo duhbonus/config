@@ -14,13 +14,6 @@ require('kanagawa').setup({
         theme = {
             -- change what colors the theme uses:
             -- https://github.com/rebelot/kanagawa.nvim/blob/master/lua/kanagawa/themes.lua
-            wave = {
-                ui = {
-                    float = {
-                        bg = "none",
-                    },
-                },
-            },
             dragon = {
                 syn = {
                     -- parameter = "yellow",
@@ -33,6 +26,16 @@ require('kanagawa').setup({
             }
         }
     },
+    overrides = function(colors)
+        local theme = colors.theme
+        return {
+            -- change completion menu colors
+            Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 },  -- add `blend = vim.o.pumblend` to enable transparency
+            PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
+            PmenuSbar = { bg = theme.ui.bg_m1 },
+            PmenuThumb = { bg = theme.ui.bg_p2 },
+        }
+    end,
     ...
 })
 vim.cmd("colorscheme kanagawa-dragon")
