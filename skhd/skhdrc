@@ -1,7 +1,7 @@
 :: default : yabai -m config window_border off
 :: switcher : yabai -m config window_border off
 
-ctrl - a ; switcher
+ctrl - b ; switcher
 switcher < return ; default
 switcher < escape ; default
 
