@@ -3,7 +3,7 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-  'rust_analyzer',
+  'rust_analyzer', -- Cargo.toml MUST be in project root for this to work
   'clangd',
   'jedi_language_server',
   'html',
@@ -61,6 +61,7 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
 
 vim.diagnostic.config({
     virtual_text = true
