@@ -7,8 +7,9 @@ require('kanagawa').setup({
             -- change colors directly
             -- https://github.com/rebelot/kanagawa.nvim/blob/master/lua/kanagawa/colors.lua
             dragonBlack3 = "#131313", -- background
-            samuraiRed = "#c4746e",
+            samuraiRed = "#cf5d55",
             oldWhite = "#a1a1a1",
+            roninYellow = "#d9a259",
             sumiInk3 = "#131313",
         },
         theme = {
