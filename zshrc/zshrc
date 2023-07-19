@@ -33,3 +33,5 @@ export cdc
 bindkey -s ^f "tmux neww ~/.config/tmux/tmux-sessionizer\n"
 
 alias vim=nvim
+alias g++=g++-13
+alias gcc=gcc-13
